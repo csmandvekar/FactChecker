@@ -1,0 +1,57 @@
+{
+  "pdfid_analysis": {
+    "error": "PDFiD not installed"
+  },
+  "pikepdf_analysis": {
+    "metadata": {
+      "/Author": "Chinmay Mandvekar",
+      "/CreationDate": "D:20250904210306+05'30'",
+      "/ModDate": "D:20250904173851+02'00'",
+      "/Producer": "3.0.26 (5.1.12) ",
+      "/Title": "PR_cc_16062025_20250723174635.pdf"
+    },
+    "structure": {
+      "pages": 1,
+      "version": "1.7",
+      "encryption": false,
+      "linearized": false,
+      "object_count": 31,
+      "trailer_keys": [
+        "/Type",
+        "/DL",
+        "/W",
+        "/Filter",
+        "/Length",
+        "/Size",
+        "/Info",
+        "/Root",
+        "/ID",
+        "/Index"
+      ],
+      "suspicious_elements": []
+    },
+    "anomalies": [
+      {
+        "type": "suspicious_producer",
+        "description": "Unusual producer: 3.0.26 (5.1.12) ",
+        "severity": "medium"
+      }
+    ]
+  },
+  "charts": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_analysis_0fca0cd1-6517-4ce4-877e-357df5b7f34a_20250904_215713.png"
+  },
+  "summary": {
+    "total_suspicious_objects": 0,
+    "total_anomalies": 1,
+    "risk_indicators": [
+      "Unusual producer: 3.0.26 (5.1.12) "
+    ],
+    "risk_score": 2
+  },
+  "chart_paths": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_analysis_0fca0cd1-6517-4ce4-877e-357df5b7f34a_20250904_215713.png"
+  }
+}

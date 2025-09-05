@@ -1,0 +1,44 @@
+{
+  "pdfid_analysis": {
+    "error": "PDFiD not installed"
+  },
+  "pikepdf_analysis": {
+    "metadata": {
+      "/Author": "Chinmay Mandvekar",
+      "/CreationDate": "D:20250904210306+05'30'",
+      "/ModDate": "D:20250904210306+05'30'",
+      "/Producer": "Microsoft: Print To PDF",
+      "/Title": "PR_cc_16062025_20250723174635.pdf"
+    },
+    "structure": {
+      "pages": 1,
+      "version": "1.7",
+      "encryption": false,
+      "linearized": false,
+      "object_count": 20,
+      "trailer_keys": [
+        "/Root",
+        "/Info",
+        "/Size"
+      ],
+      "suspicious_elements": []
+    },
+    "anomalies": []
+  },
+  "charts": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_kpi_3f3e3c0b-26b8-4fc8-9756-0e5312352656_20250905_151403.png"
+  },
+  "summary": {
+    "total_suspicious_objects": 0,
+    "total_anomalies": 0,
+    "risk_indicators": [],
+    "security_flags": [],
+    "risk_explanation": "No security risks detected. Document appears to be clean and legitimate.",
+    "risk_score": 0
+  },
+  "chart_paths": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_kpi_3f3e3c0b-26b8-4fc8-9756-0e5312352656_20250905_151403.png"
+  }
+}

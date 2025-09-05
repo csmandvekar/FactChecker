@@ -1,0 +1,72 @@
+{
+  "pdfid_analysis": {
+    "error": "PDFiD not installed"
+  },
+  "pikepdf_analysis": {
+    "metadata": {
+      "/Author": "Chinmay Mandvekar",
+      "/CreationDate": "D:20250904210306+05'30'",
+      "/ModDate": "D:20250904173851+02'00'",
+      "/Producer": "3.0.26 (5.1.12) ",
+      "/Title": "PR_cc_16062025_20250723174635.pdf"
+    },
+    "structure": {
+      "pages": 1,
+      "version": "1.7",
+      "encryption": false,
+      "linearized": false,
+      "object_count": 31,
+      "trailer_keys": [
+        "/DL",
+        "/Length",
+        "/W",
+        "/Type",
+        "/Filter",
+        "/Root",
+        "/Index",
+        "/Info",
+        "/ID",
+        "/Size"
+      ],
+      "suspicious_elements": []
+    },
+    "anomalies": [
+      {
+        "type": "suspicious_producer",
+        "description": "Unusual producer: 3.0.26 (5.1.12) ",
+        "severity": "medium",
+        "explanation": "This producer string '3.0.26 (5.1.12) ' does not match known legitimate software. It may indicate file tampering, creation with a malicious tool, or use of obscure/outdated software.",
+        "technical_details": {
+          "detected_producer": "3.0.26 (5.1.12) ",
+          "expected_producers": [
+            "adobe",
+            "acrobat",
+            "pdf",
+            "word",
+            "excel",
+            "libreoffice",
+            "openoffice"
+          ]
+        }
+      }
+    ]
+  },
+  "charts": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_kpi_66fd22a7-4531-43f2-b762-b93809e372c7_20250905_153500.png"
+  },
+  "summary": {
+    "total_suspicious_objects": 0,
+    "total_anomalies": 1,
+    "risk_indicators": [
+      "Medium-severity anomaly: Unusual producer: 3.0.26 (5.1.12)  - This producer string '3.0.26 (5.1.12) ' does not match known legitimate software. It may indicate file tampering, creation with a malicious tool, or use of obscure/outdated software."
+    ],
+    "security_flags": [],
+    "risk_explanation": "Low risk. Minor anomalies detected but document appears generally safe.",
+    "risk_score": 2
+  },
+  "chart_paths": {
+    "metadata_timeline": "",
+    "structure_analysis": "static\\pdf_charts\\structure_kpi_66fd22a7-4531-43f2-b762-b93809e372c7_20250905_153500.png"
+  }
+}

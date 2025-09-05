@@ -1,0 +1,34 @@
+{
+  "pdfid_analysis": {
+    "error": "PDFiD not installed"
+  },
+  "pikepdf_analysis": {
+    "metadata": {
+      "/Author": "Chinmay Mandvekar",
+      "/CreationDate": "D:20250904210306+05'30'",
+      "/ModDate": "D:20250904210306+05'30'",
+      "/Producer": "Microsoft: Print To PDF",
+      "/Title": "PR_cc_16062025_20250723174635.pdf"
+    },
+    "structure": {
+      "pages": 1,
+      "version": "1.7",
+      "encryption": false,
+      "linearized": false,
+      "object_count": 20,
+      "trailer_keys": [
+        "/Info",
+        "/Root",
+        "/Size"
+      ],
+      "suspicious_elements": []
+    },
+    "anomalies": []
+  },
+  "summary": {
+    "total_suspicious_objects": 0,
+    "total_anomalies": 0,
+    "risk_indicators": [],
+    "risk_score": 0
+  }
+}
