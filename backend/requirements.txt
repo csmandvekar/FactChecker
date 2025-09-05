@@ -12,7 +12,10 @@ psycopg2-binary==2.9.9
 alembic==1.12.1
 
 # File handling and storage
-python-magic-bin==0.4.14
+# python-magic-bin==0.4.14  # Removed due to hosting compatibility issues
+# Using python-magic instead (requires libmagic system dependency)
+# Alternative: filetype==1.2.0 for pure Python file type detection
+filetype==1.2.0
 supabase==2.7.4
 
 # PDF forensics

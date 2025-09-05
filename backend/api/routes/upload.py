@@ -173,16 +173,17 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 def _detect_mime_type(file_content: bytes) -> str:
-    """Detect MIME type using python-magic if available; otherwise return empty string."""
+    """Detect MIME type using filetype library if available; otherwise return empty string."""
     try:
-        import magic  # Lazy import to avoid startup issues on Windows
-        return magic.from_buffer(file_content, mime=True)
+        import filetype  # Pure Python file type detection
+        kind = filetype.guess(file_content)
+        return kind.mime if kind else ""
     except Exception:
         return ""
 
 def validate_file_type(file_content: bytes, filename: str) -> str:
     """Validate file type and return file type category"""
-    # Try python-magic; fall back to mimetypes by filename
+    # Try filetype library; fall back to mimetypes by filename
     mime_type = _detect_mime_type(file_content) or (mimetypes.guess_type(filename)[0] or "")
     
     # Check file extension
@@ -256,7 +257,7 @@ async def upload_file(
             filename=storage_metadata["filename"],
             original_filename=storage_metadata["original_filename"],
             file_type=storage_metadata["file_type"],
-            # Use the same detection function to avoid requiring python-magic
+            # Use the same detection function for consistent MIME type detection
             mime_type=_detect_mime_type(file_content) or (mimetypes.guess_type(file.filename)[0] or ""),
             file_size=len(file_content),
             file_hash=storage_metadata["file_hash"],
